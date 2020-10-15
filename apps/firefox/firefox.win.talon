@@ -73,3 +73,25 @@ action(browser.submit_form):
 
 action(browser.toggle_dev_tools):
 	key(ctrl-shift-i)
+
+# - 
+action(app.tab_previous):
+    key(ctrl-pgup)
+action(app.tab_next):
+    key(ctrl-pgdown)
+    
+# - sakka key bindings vim jump
+jump: 
+    key(ctrl-alt-f)
+    key(ctrl-alt-f) 
+
+    
+jump later:
+    key(ctrl-alt-f)
+    key(ctrl-alt-b) 
+    
+tab duplicate:
+    key(ctrl-alt-d)
+    
+page up (half|haf): key(shift-s)
+page down (half|haf): key(shift-d)

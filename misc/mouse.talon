@@ -2,7 +2,7 @@ control mouse: user.mouse_toggle_control_mouse()
 zoom mouse: user.mouse_toggle_zoom_mouse()
 camera overlay: user.mouse_toggle_camera_overlay()
 run calibration: user.mouse_calibrate()	
-touch: 
+click: 
 	mouse_click(0)
 	# close the mouse grid if open
 	user.grid_close()
@@ -53,7 +53,7 @@ wheel down here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_down()
 wheel tiny [down]: mouse_scroll(20)
-wheel tiny [down] here:
+wheel tiny [down]:
     user.mouse_move_center_active_window()
     mouse_scroll(20)
 wheel downer: user.mouse_scroll_down_continuous()

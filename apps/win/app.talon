@@ -39,4 +39,4 @@ action(app.window_open):
 
 #requires easy window switcher or equivalent (built into most Linux)
 action(app.window_previous): 
-	key(alt-shift-`)
+	key(alt-tab)
