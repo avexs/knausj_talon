@@ -165,6 +165,7 @@ ctx.lists["self.number_key"] = dict(zip(default_digits, numbers))
 ctx.lists["self.arrow_key"] = {
     "down": "down",
     "left": "left",
+    "lef": "left",
     "right": "right",
     "up": "up",
 }

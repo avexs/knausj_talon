@@ -10,10 +10,10 @@ go word left:
 go word right:
     edit.word_right()
 
-go left:
+go (lef|left):
     edit.left()
 
-go right:
+go (wry|right):
     edit.right()
 
 go up:
@@ -94,44 +94,38 @@ indent [more]:
     edit.indent_less()
 
 # deleting
-clear line:
+kill line:
     edit.delete_line()
 
-clear left:
-    key(backspace)
-
-clear right:
-    key(delete)
-
-clear up:
+kill up:
     edit.extend_line_up()
     edit.delete()
 
-clear down:
+kill down:
     edit.extend_line_down()
     edit.delete()
 
-clear word left:
+kill (lef|left):
     edit.extend_word_left()
     edit.delete()
 
-clear word right:
+kill (wry|right):
     edit.extend_word_right()
     edit.delete()
 
-clear way left:
+kill way left:
     edit.extend_line_start()
     edit.delete()
 
-clear way right:
+kill way right:
     edit.extend_line_end()
     edit.delete()
 
-clear way up:
+kill way up:
     edit.extend_file_start()
     edit.delete()
 
-clear way down:
+kill way down:
     edit.extend_file_end()
     edit.delete()
 

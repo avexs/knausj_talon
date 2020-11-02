@@ -48,6 +48,12 @@ show
 ls
 qor
 file
+signoff
+append
+upf
+regex
+marvell
+todo
 gooey,gui
 pioneer,pnr
 pee double you dee,pwd
@@ -73,3 +79,7 @@ el less,ls
 ellis,ls
 queue oh are,qor
 queue you are,qor
+signs off,signoff
+for each,foreach
+you pee ef,upf
+up

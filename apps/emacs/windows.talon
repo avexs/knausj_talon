@@ -17,5 +17,5 @@ window right:
     key(ctrl-x ctrl-right)
 
 # - window jump
-window jump:
+jump window:
     user.execute_command("window-number-switch")

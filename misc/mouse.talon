@@ -6,6 +6,11 @@ click:
 	mouse_click(0)
 	# close the mouse grid if open
 	user.grid_close()
+(double|dub) click: 
+	mouse_click(0)
+    mouse_click(0)      
+	# close the mouse grid if open
+	user.grid_close()
 
 righty: 
 	mouse_click(1)

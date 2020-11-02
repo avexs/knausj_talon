@@ -15,6 +15,8 @@ list in it:
 	key(left)
 (block | lock): 
 	insert("{}") 
+body:
+	insert("{}") 
 	key(left enter enter up tab)
 
 if: "if "	

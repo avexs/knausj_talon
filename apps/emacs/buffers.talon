@@ -3,7 +3,7 @@ user.vnc_app: emacs
 win.title: /^Emacs;| Exceed/
 -
 
-switch buffer:
+(switch|swit) buffer:
 	key(ctrl-x)
 	key(b)
 

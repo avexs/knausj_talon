@@ -139,7 +139,7 @@ class Actions:
         if 1 not in ctrl.mouse_buttons_down():
             # print("start drag...")
             ctrl.mouse_click(button=0, down=True)
-            # app.notify("drag started")
+            app.notify("drag started")
         else:
             # print("end drag...")
             ctrl.mouse_click(button=0, up=True)

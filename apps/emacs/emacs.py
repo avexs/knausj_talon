@@ -22,15 +22,19 @@ def scope():
     emacs_modes = ""
     if re.match('^Emacs', win.title) is not None:
         vnc_app = "emacs"
-        results = re.search ('Modes=\((.*)\)', win.title)
+        results = re.search ('Path=(.*)\;\sModes=\((.*)\)', win.title)
         if results is not None:
-            #emacs_path = results.groups(1)
-            emacs_modes = str(results.groups(1))
+            emacs_path = str(results.group(1))
+            emacs_modes = str(results.group(2))
+    else:
+        if re.match('Exceed', win.title) is not None:
+            vnc_app = "emacs"
     #print(etx_app)
     #print(emacs_modes)
     return_dict = {}
     #return_dict['vnc_app'] = vnc_app
-    print("hacking vnc_app")
+    #print("hacking vnc_app")
+    #print(emacs_path)
     return_dict['vnc_app'] = "emacs"
     return_dict['emacs_modes'] = emacs_modes
     return_dict['emacs_path'] = emacs_path

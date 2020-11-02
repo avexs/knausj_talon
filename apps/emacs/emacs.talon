@@ -2,6 +2,9 @@
 user.vnc_app: emacs
 win.title: /^Emacs;| Exceed/
 -
+action(app.window_close):
+	key(ctrl-x ctrl-c)
+
 cancel:
 		key(ctrl-g)
 
@@ -30,6 +33,18 @@ spring <number>+:
     user.execute_command("goto-line")
     insert(number)
     key("enter")
+
+move region:
+    key("ctrl-u 1")     
+    user.execute_command("avy-move-region")
+
+copy region:
+    key("ctrl-u 1")     
+    user.execute_command("avy-copy-region")
+copy line:
+    key("ctrl-u 1")     
+    user.execute_command("avy-copy-line")
+
 
 # - Generic emacs controls
 meta: 
