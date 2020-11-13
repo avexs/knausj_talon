@@ -28,3 +28,8 @@ wipe: key(backspace)
 slap:
 	edit.line_end()
 	key(enter)
+swat:
+    edit.line_start()
+    key(enter)
+    key(up)
+    

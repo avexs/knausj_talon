@@ -7,7 +7,7 @@
     key(space)
 
 # - Backspace.
-back:
+(back|wipe):
     key(backspace)
 
 # - Delete

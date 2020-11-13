@@ -16,7 +16,7 @@ go (lef|left):
 go (wry|right):
     edit.right()
 
-go up:
+go upper:
     edit.up()
 
 go down:
@@ -38,13 +38,13 @@ go way right:
 go way down:
     edit.file_end()
 
-go way up:
+go way upper:
     edit.file_start()
 
 go page down:
     edit.page_down()
 
-go page up:
+go page upper:
     edit.page_up()
 
 # selecting
@@ -62,7 +62,7 @@ select left:
 select right:
     edit.extend_right()
 
-select up:
+select upper:
     edit.extend_line_up()
 
 select down:
@@ -80,7 +80,7 @@ select way left:
 select way right:
     edit.extend_line_end()
 
-select way up:
+select way upper:
     edit.extend_file_start()
 
 select way down:
@@ -97,7 +97,7 @@ indent [more]:
 kill line:
     edit.delete_line()
 
-kill up:
+kill upper:
     edit.extend_line_up()
     edit.delete()
 
@@ -121,7 +121,7 @@ kill way right:
     edit.extend_line_end()
     edit.delete()
 
-kill way up:
+kill way upper:
     edit.extend_file_start()
     edit.delete()
 
@@ -140,7 +140,7 @@ copy all:
 # copy right: 
 #     edit.extend_right()
 #     edit.copy()
-# copy up: 
+# copy upper: 
 #     edit.extend_up()
 #     edit.copy()
 # copy down: 
@@ -163,7 +163,7 @@ cut everything:
 # cut right: 
 #      edit.select_all()
 #      edit.cut()
-# cut up: 
+# cut upper: 
 #      edit.select_all()
 #     edit.cut()
 # cut down: 

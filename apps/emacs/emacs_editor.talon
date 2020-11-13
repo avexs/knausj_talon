@@ -219,7 +219,8 @@ action(edit.select_none):
 #action(edit.select_sentence):
 
 action(edit.select_word):
-	key(ctrl-left ctrl-shift-right)
+    action.edit.word_left()
+	key(ctrl-shift-right)
 
 #action(edit.selected_text): -> str
 #action(edit.sentence_end):

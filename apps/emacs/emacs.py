@@ -9,7 +9,7 @@ ctx = Context()
 @mod.scope
 def scope():
     win = ui.active_window()
-    #print(win.title)
+    print(win.title)
     #results = re.search ('^Emacs; Path=(.*)', win.title)
     #results = re.search ('^Emacs', win.title)
 
@@ -20,28 +20,30 @@ def scope():
     vnc_app = "Unknown"
     emacs_path = ""
     emacs_modes = ""
-    if re.match('^Emacs', win.title) is not None:
+    if re.match(r'^Emacs', win.title) is not None:
         vnc_app = "emacs"
-        results = re.search ('Path=(.*)\;\sModes=\((.*)\)', win.title)
+        results = re.search(r'Path=(.*)\;\sModes=\[?\((.*)\)\]?', win.title)
+        print(str(results))
         if results is not None:
             emacs_path = str(results.group(1))
             emacs_modes = str(results.group(2))
     else:
-        if re.match('Exceed', win.title) is not None:
+        if re.match(r'Exceed', win.title) is not None:
             vnc_app = "emacs"
     #print(etx_app)
-    #print(emacs_modes)
+    print(emacs_modes)
+    print(emacs_path)
     return_dict = {}
     #return_dict['vnc_app'] = vnc_app
-    #print("hacking vnc_app")
-    #print(emacs_path)
+    #print("haca kingo vnc_app")
+    #print(emacs_path)3
     return_dict['vnc_app'] = "emacs"
     return_dict['emacs_modes'] = emacs_modes
     return_dict['emacs_path'] = emacs_path
     return return_dict
         
 ui.register('win_title', scope.update)
-
+ui.register('win_focus', scope.update)
 
 
 @mod.action_class
